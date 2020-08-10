@@ -4,6 +4,67 @@
   --color3: #383838;
 }
 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Helvetica, ;
+  font-family: Helvetica, Gotham;
+  margin: 0;
+}
+
+/* ================================ mobile first =========================== */
+
+/* ================================ header ================================= */
+
+header {
+  background-color: var(--color1);
+}
+
+.header-black {
+  color: white;
+  background-color: var(--color3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.header-black-left ul{
+  display: flex;
+  list-style: none;
+}
+
+.h-black-left-list li {
+  margin-right: 10px;
+}
+
+.header-black-right {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+
+.profil-name {
+  margin: 0 20px;
+  font-weight: 700;
+}
+
+.profil-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+}
+
+/* ========================================= first breakpoint ================================ */
+
+@media screen and (min-width: 768px) {
+  .header-black-right {
+    display: flex;
+  }
 }
