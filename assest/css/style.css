@@ -13,7 +13,7 @@
 body {
   font-family: Helvetica, Gotham;
   margin: 0;
-  background-color: white;
+  background-color: #f0f0f0;
 }
 
 /* ================================ mobile first =========================== */
@@ -67,6 +67,7 @@ header {
 /* ========================================= Footer ========================================== */
 
 footer {
+  background-color: white;
   border-top: 1px solid var(--color2);
 }
 
@@ -91,6 +92,9 @@ footer {
 
 .copyright {
   border-top: 1px solid var(--color2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ========================================= first breakpoint ================================ */
