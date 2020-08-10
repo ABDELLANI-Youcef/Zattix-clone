@@ -13,7 +13,7 @@
 body {
   font-family: Helvetica, Gotham;
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 /* ================================ mobile first =========================== */
@@ -60,6 +60,37 @@ header {
   width: 40px;
   border-radius: 50%;
 
+}
+
+/* ========================================= Main ============================================ */
+
+/* ========================================= Footer ========================================== */
+
+footer {
+  border-top: 1px solid var(--color2);
+}
+
+.footer-top {
+  display: flex;
+}
+
+.categories-header {
+  text-transform: uppercase;
+  color: var(--color1);
+  border-bottom: 2px solid var(--color1);
+}
+
+.categories-desc {
+  display: flex;
+}
+
+.footer-t-list {
+  list-style: none;
+  color: var(--color2);
+}
+
+.copyright {
+  border-top: 1px solid var(--color2);
 }
 
 /* ========================================= first breakpoint ================================ */
