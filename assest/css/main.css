@@ -5,6 +5,8 @@ header {
 
 .hot-ads {
   background-color: white;
+  display: flex;
+  align-items: center;
 }
 
 .hot-ads-title {
@@ -15,4 +17,12 @@ header {
 .hot-ads-image {
   height: 500px;
   width: 400px;
+}
+
+.hot-ads-content {
+  display: flex;
+}
+
+.hot-ads-desc-subject {
+  color: var(--color1);
 }
