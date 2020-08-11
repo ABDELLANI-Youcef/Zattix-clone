@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: 
+  src:
     url('Gotham-Medium.woff2') format('woff2'),
     url('Gotham-Medium.woff') format('woff');
   font-weight: 500;
@@ -45,7 +45,7 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: 
+  src:
     url('Gotham-Book.woff2') format('woff2'),
     url('Gotham-Book.woff') format('woff');
   font-weight: normal;
@@ -54,7 +54,7 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: 
+  src:
     url('Gotham-Medium.woff2') format('woff2'),
     url('Gotham-Medium.woff') format('woff');
   font-weight: 500;
@@ -63,7 +63,7 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: 
+  src:
     url('Gotham-LightItalic.woff2') format('woff2'),
     url('Gotham-LightItalic.woff') format('woff');
   font-weight: 300;
@@ -72,7 +72,7 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: 
+  src:
     url('Gotham-Light.woff2') format('woff2'),
     url('Gotham-Light.woff') format('woff');
   font-weight: 300;
