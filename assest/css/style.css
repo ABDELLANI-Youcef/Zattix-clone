@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   margin: 0;
   background-color: #f0f0f0;
 }
@@ -56,10 +56,17 @@ h1 {
 }
 
 .header-search {
-  height: 3rem;
+  display: inline;
+  padding: 0.5rem 1rem;
   border-radius: 0;
   border: none;
+  text-align: center;
   background-color: var(--color3);
+  color: var(--color2);
+}
+
+.header-search a {
+  text-decoration: none;
   color: var(--color2);
 }
 
@@ -253,8 +260,9 @@ footer {
 /* ========================================= first breakpoint ================================ */
 
 @media screen and (min-width: 768px) {
+
   /* ------------ Header ---------------- */
-  
+
   .header-black {
     justify-content: space-between;
   }
@@ -266,13 +274,13 @@ footer {
   .post {
     display: block;
   }
-  
+
   .header-black-right {
     display: flex;
   }
-  
+
   /* ------------ Footer ----------------------- */
-  
+
   .footer-top {
     flex-direction: row;
     align-items: flex-start;
