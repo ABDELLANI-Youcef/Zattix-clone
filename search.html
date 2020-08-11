@@ -10,28 +10,30 @@
   <title>ZATTIX search results</title>
 </head>
 <body>
-  <header>
-    <div class="header-black">
-      <nav class="header-black-left">
-        <ul class="h-black-left-list">
-          <li><!-- logo --> ZATTIX</li>
-          <li><i class="fa fa-home"></i> HOME</li>
-          <li><i class="far fa-border-outer"></i> COLLECTIONS</li>
-          <li><i class="fa fa-shopping-cart"></i> PURCHASE LIST</li>
-          <li>post an ad</li>
-        </ul>
-      </nav>
-      <div class="header-black-right">
-        <i class="fa fa-envelope-o"></i>
-        <!-- profile picture -->
-        <p class="profil-name">youcef ABDELLANI</p>
-        <img class="profil-img" src="./assest/img/profil.jpg" alt="profil image">
-      </div>
+  <div class="header-black">
+    <nav class="header-black-left">
+      <ul class="h-black-left-list">
+        <li class="nav-brand"><img class="header-logo" src="./assest/img/pink-logo.png" alt="zattix logo"> ZATTIX</li>
+        <li class="header-black-home"><a href="index.html"> <i class="fa fa-home"></i> HOME</a></li>
+        <li><i class="far fa-border-outer"></i> COLLECTIONS</li>
+        <li><i class="fa fa-shopping-cart"></i> PURCHASE LIST</li>
+        <li class="post">post an ad</li>
+      </ul>
+    </nav>
+    <div class="header-black-right">
+      <i class="fa fa-envelope-o"></i>
+      <!-- profile picture -->
+      <p class="profil-name">youcef ABDELLANI</p>
+      <img class="profil-img" src="./assest/img/profil.jpg" alt="profil image">
     </div>
+  </div>
+
+  <header>
     <h1>ZATTIX</h1>
-    <p>Buying and Selling Couldn't be Simpler than this</p>
+    <p class="slogan">Buying and Selling Couldn't be Simpler than this</p>
     <form class="header-form">
-      <select id="cars" name="Departement">
+      
+      <select class="header-select" id="cars" name="Departement">
         <option value="All-Departements">All Departements</option>
         <option value="Algiers">Algiers</option>
         <option value="Djelfa">Djelfa</option>
@@ -39,18 +41,159 @@
       </select>
       <input type="search" name="search-subject" id="search-subject" placeholder="What do you search for ?">
       <input type="search" name="search-subject" id="search-subject">
-      <input type="submit" value="Search">
+      <input class="header-search" type="submit" value="Search">
     </form>
   </header>
-  <main></main>
+
+  <div class="body-content">
+    <aside>
+      <form>
+        <input type="checkbox" name="rent" id="rent"> <label for="rent">Rent</label>
+        <input type="checkbox" name="ownership" id="ownership"> <label for="ownership">Ownership</label>
+        <h3 class="aside-title">Type</h3>
+        <div><input type="checkbox" name="entire" id="entire"> <label for="entire">Entire Place</label></div>
+        <div><input type="checkbox" name="private" id="private"> <label for="private">Private Place</label></div>
+        <div><input type="checkbox" name="shared" id="shared"> <label for="shared">Shared Place</label></div>
+
+        <h3 class="aside-title">Size</h3>
+        <div><input type="checkbox" name="four-room" id="four-room"> <label for="four-room">2-4 Rooms</label></div>
+        <div><input type="checkbox" name="five-room" id="five-room"> <label for="five-room">+ 5 Rooms</label></div>
+        <div><input type="checkbox" name="costum" id="costum"> <label for="costum">Custom</label> <input class="number-room" type="text" name="number-room" id="number-room" value="5"></div>
+
+        <h3 class="aside-title">Price Range</h3>
+        <div><input type="checkbox" name="ten" id="ten"> <label for="ten">10$ - 100$</label></div>
+        <div><input type="checkbox" name="hundred" id="hundred"> <label for="hundred">100$ - 500$</label></div>
+        <div><input type="checkbox" name="f-hundred" id="f-hundred"> <label for="f-hundred">500$ - 1000$</label></div>
+        <div><input type="checkbox" name="thousand" id="thousand"> <label for="thousand">+1000$</label></div>
+      </form>
+    </aside>
+    <div class="show-result">
+      <p class="results-number">138 Results for "Flat" Search at Ain Oussera in category ukyo</p>
+
+      <div class="result-offer">
+        <div class="result-img-container">
+          <img class="result-image"
+          src="https://images-na.ssl-images-amazon.com/images/I/71LRdEUOmNL.jpg"
+          alt="result image">
+        </div>
+        
+        <div class="result-description">
+          <h3 class="result-title" >Flat with Big Living, 3 rooms, 7 kitchens</h3>
+          <p class="result-type">500 M, Ownership</p>
+          <p class="result-description-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aut magnam laborum culpa illum sit at rem tenetur corrupti. Repellendus corrupti molestias ipsa labore vero doloribus. A
+            met, quidem culpa? youcef is the worst knight in the world</p>
+          <p class="result-location"><span>Location:</span> 11 quarter Ben Badis, Ain Oussera</p>
+          <div class="result-options">
+            <p class="result-date">6 Aug, 1995</p>
+            <p class="result-price">150$</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-offer result-selected">
+        <div class="result-img-container">
+          <img class="result-image"
+          src="https://images-na.ssl-images-amazon.com/images/I/71LRdEUOmNL.jpg"
+          alt="result image">
+        </div>
+        
+        <div class="result-description">
+          <h3 class="result-title" >Flat with Big Living, 3 rooms, 7 kitchens</h3>
+          <p class="result-type">500 M, Ownership</p>
+          <p class="result-description-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aut magnam laborum culpa illum sit at rem tenetur corrupti. Repellendus corrupti molestias ipsa labore vero doloribus. A
+            met, quidem culpa? youcef is the worst knight in the world</p>
+          <p class="result-location"><span>Location:</span> 11 quarter Ben Badis, Ain Oussera</p>
+          <div class="result-options">
+            <p class="result-date">6 Aug, 1995</p>
+            <div class="flex">
+              <p class="result-price give-call"> Give a Call</p>
+              <p class="result-price">150$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-offer">
+        <div class="result-img-container">
+          <img class="result-image"
+          src="https://images-na.ssl-images-amazon.com/images/I/71LRdEUOmNL.jpg"
+          alt="result image">
+        </div>
+        
+        <div class="result-description">
+          <h3 class="result-title" >Flat with Big Living, 3 rooms, 7 kitchens</h3>
+          <p class="result-type">500 M, Ownership</p>
+          <p class="result-description-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aut magnam laborum culpa illum sit at rem tenetur corrupti. Repellendus corrupti molestias ipsa labore vero doloribus. A
+            met, quidem culpa? youcef is the worst knight in the world</p>
+          <p class="result-location"><span>Location:</span> 11 quarter Ben Badis, Ain Oussera</p>
+          <div class="result-options">
+            <p class="result-date">6 Aug, 1995</p>
+            <p class="result-price">150$</p>
+          </div>
+        </div>
+      </div>
+      <div class="result-offer">
+        <div class="result-img-container">
+          <img class="result-image"
+          src="https://images-na.ssl-images-amazon.com/images/I/71LRdEUOmNL.jpg"
+          alt="result image">
+        </div>
+        
+        <div class="result-description">
+          <h3 class="result-title" >Flat with Big Living, 3 rooms, 7 kitchens</h3>
+          <p class="result-type">500 M, Ownership</p>
+          <p class="result-description-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aut magnam laborum culpa illum sit at rem tenetur corrupti. Repellendus corrupti molestias ipsa labore vero doloribus. A
+            met, quidem culpa? youcef is the worst knight in the world</p>
+          <p class="result-location"><span>Location:</span> 11 quarter Ben Badis, Ain Oussera</p>
+          <div class="result-options">
+            <p class="result-date">6 Aug, 1995</p>
+            <p class="result-price">150$</p>
+          </div>
+        </div>
+      </div>
+      <div class="result-offer">
+        <div class="result-img-container">
+          <img class="result-image"
+          src="https://images-na.ssl-images-amazon.com/images/I/71LRdEUOmNL.jpg"
+          alt="result image">
+        </div>
+        
+        <div class="result-description">
+          <h3 class="result-title" >Flat with Big Living, 3 rooms, 7 kitchens</h3>
+          <p class="result-type">500 M, Ownership</p>
+          <p class="result-description-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aut magnam laborum culpa illum sit at rem tenetur corrupti. Repellendus corrupti molestias ipsa labore vero doloribus. A
+            met, quidem culpa? youcef is the worst knight in the world</p>
+          <p class="result-location"><span>Location:</span> 11 quarter Ben Badis, Ain Oussera</p>
+          <div class="result-options">
+            <p class="result-date">6 Aug, 1995</p>
+            <p class="result-price">150$</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-select">
+        <div class="page-option">1</div> 
+        <div class="page-option">2</div> 
+        <div class="page-option">3</div> 
+        <div class="page-option">4</div> 
+        <div>...</div> 
+        <div class="page-option">7</div> 
+      </div>
+
+    </div>
+  </div>
   <footer>
     <div class="footer-top">
-      <div>
+      <div class="site-desc">
+        <div class="site-desc-logo">
+          <img src="./assest/img/grey-logo.png" alt="society logo">
+          <h3>ZATTIX</h3>
+        </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ex voluptatem vel, autem, iusto accusamus sapiente voluptatum sequi eius ipsa, doloribus itaque corporis illo facilis incidunt fugit molestiae deserunt quisquam.</p>
       </div>
 
       <div class="categories">
-        <h2 class="categories-header">categities</h2>
+        <h2 class="categories-header">categories</h2>
         <div class="categories-desc">
           <nav>
             <ul class="footer-t-list">
@@ -77,7 +220,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="navigation">
         <h2 class="categories-header">navigation</h2>
         <nav>
           <ul class="footer-t-list">
@@ -91,32 +234,39 @@
         </nav>
       </div>
 
-      <div>
+      <div class="footer-top-form">
         <form>
-          <label for="foot-country">country: </label>
-          <select name="foot-country" id="foot-country">
-            <option value="Algeria">Algeria</option>
-            <option value="Tunisia">Tunisia</option>
-            <option value="Morocco">Morocco</option>
-            <option value="Egypt">Egypt</option>
-          </select>
+          <div class="form-quest">
+            <label for="foot-country">country </label>
+            <select name="foot-country" id="foot-country">
+              <option value="Algeria">Algeria</option>
+              <option value="Tunisia">Tunisia</option>
+              <option value="Morocco">Morocco</option>
+              <option value="Egypt">Egypt</option>
+            </select>
+          </div>
 
-          <label for="foot-language">language: </label>
-          <select name="foot-language" id="foot-language">
-            <option value="Arabic">Arabic</option>
-            <option value="French">French</option>
-            <option value="English">English</option>
-            <option value="Spanish">Spanish</option>
-          </select>
+          <div class="form-quest">
+            <label for="foot-language">language </label>
+              <select name="foot-language" id="foot-language">
+                <option value="Arabic">Arabic</option>
+                <option value="French">French</option>
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+              </select>
+          </div>
 
-          <label for="foot-currency">currency: </label>
-          <select name="foot-currency" id="foot-currency">
-            <option value="Alg-Dinar">Algerian Dinar</option>
-            <option value="Tun-Dinar">Tunian Dinar</option>
-            <option value="Dirham">Dirham</option>
-            <option value="Pound">Pound</option>
-            <option value="Dollar">Dollars</option>
-          </select>
+          <div class="form-quest">
+            <label for="foot-currency">currency </label>
+            <select name="foot-currency" id="foot-currency">
+              <option value="Alg-Dinar">Algerian Dinar</option>
+              <option value="Tun-Dinar">Tunian Dinar</option>
+              <option value="Dirham">Dirham</option>
+              <option value="Pound">Pound</option>
+              <option value="Dollar">Dollars</option>
+            </select>
+          </div>
+
         </form>
       </div>
     </div>
@@ -132,6 +282,6 @@
         <i class="fa fa-google-plus"></i>
       </div>
     </div>
-  </footer>
+  </footer> 
 </body>
 </html>

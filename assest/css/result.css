@@ -1,0 +1,138 @@
+header {
+  color: white;
+  padding-top: 10px;
+}
+
+.body-content {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  padding: 30px;
+  width: 400px;
+}
+
+.number-room {
+  width: 4rem;
+  text-align: center;
+}
+
+.aside-title {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--color2);
+}
+
+.results-number {
+  margin-left: 2rem;
+}
+
+.result-offer {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-top: 1px solid var(--color2);
+  border-bottom: 1px solid var(--color2);
+  margin-bottom: 1rem;
+}
+
+.result-selected {
+  background-color: white;
+}
+
+.result-img-container {
+  margin-right: 1rem;
+}
+
+.result-image {
+  width: 200px;
+  height: auto;
+}
+
+.result-title {
+  font-size: 1.9rem;
+  margin-bottom: 0;
+}
+
+.result-type {
+  color: var(--color1);
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-top: 0;
+}
+
+.result-description-p, .result-location, .result-date  {
+  color: var(--color2);
+  font-size: 1.7rem;
+}
+
+.result-location span {
+  font-weight: bold;
+  color: var(--color3);
+}
+
+.result-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result-price {
+  color: white;
+  font-size: 1.7rem;
+  background-color: var(--color1);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.give-call {
+  margin-right: 1rem;
+}
+
+.page-select {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.page-select div {
+  margin-right: 1rem;
+}
+
+.page-option {
+  background-color: white;
+  border: 1px solid var(--color2);
+  border-radius: 3px;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.page-option:hover {
+  background-color: var(--color1);
+  color: white;
+  border-radius: 3px;
+  padding: 0.5rem;
+}
+
+/* =============================== Breakpoint ========================================*/
+
+@media screen and (min-width: 768px) {
+  
+  .body-content {
+    flex-direction: row;
+  }
+
+  aside {
+    border-right: 1px solid var(--color2);
+  }
+  
+  .result-offer {
+    flex-direction: row;
+  }
+}
+

@@ -10,28 +10,30 @@
   <title>ZATTIX main page clone</title>
 </head>
 <body>
-  <header>
-    <div class="header-black">
-      <nav class="header-black-left">
-        <ul class="h-black-left-list">
-          <li><!-- logo --> ZATTIX</li>
-          <li><i class="fa fa-home"></i> HOME</li>
-          <li><i class="far fa-border-outer"></i> COLLECTIONS</li>
-          <li><i class="fa fa-shopping-cart"></i> PURCHASE LIST</li>
-          <li>post an ad</li>
-        </ul>
-      </nav>
-      <div class="header-black-right">
-        <i class="fa fa-envelope-o"></i>
-        <!-- profile picture -->
-        <p class="profil-name">youcef ABDELLANI</p>
-        <img class="profil-img" src="./assest/img/profil.jpg" alt="profil image">
-      </div>
+  <div class="header-black">
+    <nav class="header-black-left">
+      <ul class="h-black-left-list">
+        <li class="nav-brand"><img class="header-logo" src="./assest/img/pink-logo.png" alt="zattix logo"> ZATTIX</li>
+        <li class="header-black-home"><a href="index.html"> <i class="fa fa-home"></i> HOME</a></li>
+        <li><i class="far fa-border-outer"></i> COLLECTIONS</li>
+        <li><i class="fa fa-shopping-cart"></i> PURCHASE LIST</li>
+        <li class="post">post an ad</li>
+      </ul>
+    </nav>
+    <div class="header-black-right">
+      <i class="fa fa-envelope-o"></i>
+      <!-- profile picture -->
+      <p class="profil-name">youcef ABDELLANI</p>
+      <img class="profil-img" src="./assest/img/profil.jpg" alt="profil image">
     </div>
+  </div>
+
+  <header>
     <h1>ZATTIX</h1>
-    <p>Buying and Selling Couldn't be Simpler than this</p>
+    <p class="slogan">Buying and Selling Couldn't be Simpler than this</p>
     <form class="header-form">
-      <select id="cars" name="Departement">
+      
+      <select class="header-select" id="cars" name="Departement">
         <option value="All-Departements">All Departements</option>
         <option value="Algiers">Algiers</option>
         <option value="Djelfa">Djelfa</option>
@@ -39,17 +41,18 @@
       </select>
       <input type="search" name="search-subject" id="search-subject" placeholder="What do you search for ?">
       <input type="search" name="search-subject" id="search-subject">
-      <input type="submit" value="Search">
+      <input class="header-search" type="submit" value="Search">
     </form>
   </header>
+
   <article class="hot-ads">
     <div class="prev-hot-ads">
       <i class="fa fa-angle-left"></i>
     </div>
-    <div>
+    <div class="hot-ads-main">
       <h2 class="hot-ads-title">hot ads</h2>
       <div class="hot-ads-content">
-        <div>
+        <div class="hot-ads-imgcontainer">
           <img class="hot-ads-image"
           src="https://upload.wikimedia.org/wikipedia/commons/6/63/FoS20162016_0624_132444AA_%2827785299372%29.jpg" 
           alt="bugatti chiron image">
@@ -59,11 +62,11 @@
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum amet nostrum impedit necessitatibus esse saepe, quod cumque deleniti quasi laborum unde eaque laboriosam minus? Ea, praesentium. Nisi recusandae natus quisquam.
           </p>
-          <p><span>By:</span> youcef ABDELLANI</p>
-          <p><span>By:</span> Ain Oussera, Djelfa, Algeria</p>
-          <div>
-            <p>1 440 000$</p>
-            <p><i class="fa fa-shopping-cart"></i> PURCHASE</p>
+          <p class="hot-ads-by"><span class="thick">By:</span> youcef ABDELLANI</p>
+          <p class="hot-ads-loc"><span class="thick">Location:</span> Ain Oussera, Djelfa, Algeria</p>
+          <div class="hot-ads-options">
+            <div class="hot-ads-price">1 440 000$</div>
+            <div class="hot-ads-purchase"><i class="fa fa-shopping-cart"></i> PURCHASE</div>
           </div>
           
         </div>
@@ -79,68 +82,259 @@
   <main>
 
     <section>
-      <h3><i class="fas fa-ad"></i> flight <span class="product-type-explain">(Helicopter, private flights, big flight)</span></h3>
-      <div class="product-show">
+      <h3 class="product-type-title"><i class="fa fa-plane product-type-icon"></i> flight <span class="product-type-explain">(Helicopter, private flights, big flight)</span></h3>
+      <div class="products-show">
         <div class="product-offer">
           <img class="product-picture"
            src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
            alt="">
-          <p class="product-name"linkin park></p>
-          <p class="proudct-state">New</p>
-          <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
-          <div>
-            <i class="fa fa-plus"></i>
-            <p class="product-prise">450$</p>
-          </div>
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+        
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft: a big plane for your confortable and safe traveling</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <h3><i class="fas fa-ad"></i> flight <span class="product-type-explain">(Helicopter, private flights, big flight)</span></h3>
-      <div class="product-show">
+      <h3 class="product-type-title"><i class="fa fa-plane product-type-icon"></i> flight <span class="product-type-explain">(Helicopter, private flights, big flight)</span></h3>
+      <div class="products-show">
         <div class="product-offer">
           <img class="product-picture"
            src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
            alt="">
-          <p class="product-name"linkin park></p>
-          <p class="proudct-state">New</p>
-          <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
-          <div>
-            <i class="fa fa-plus"></i>
-            <p class="product-prise">450$</p>
-          </div>
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+        
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft: a big plane for your confortable and safe traveling</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <h3><i class="fas fa-ad"></i> flight <span class="product-type-explain">(Helicopter, private flights, big flight)</span></h3>
-      <div class="product-show">
+      <h3 class="product-type-title"><i class="fa fa-plane product-type-icon"></i> flight <span class="product-type-explain">(Helicopter, private flights, big flight)</span></h3>
+      <div class="products-show">
         <div class="product-offer">
           <img class="product-picture"
            src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
            alt="">
-          <p class="product-name"linkin park></p>
-          <p class="proudct-state">New</p>
-          <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
-          <div>
-            <i class="fa fa-plus"></i>
-            <p class="product-prise">450$</p>
-          </div>
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+        
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft: a big plane for your confortable and safe traveling</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name"linkin park>Air bus A380 Passenger aircraft</p>
+            <p class="proudct-state">New</p>
+            <p class="proudct-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
         </div>
       </div>
     </section>
+    
   </main>
 
   <footer>
     <div class="footer-top">
-      <div>
+      <div class="site-desc">
+        <div class="site-desc-logo">
+          <img src="./assest/img/grey-logo.png" alt="society logo">
+          <h3>ZATTIX</h3>
+        </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ex voluptatem vel, autem, iusto accusamus sapiente voluptatum sequi eius ipsa, doloribus itaque corporis illo facilis incidunt fugit molestiae deserunt quisquam.</p>
       </div>
 
       <div class="categories">
-        <h2 class="categories-header">categities</h2>
+        <h2 class="categories-header">categories</h2>
         <div class="categories-desc">
           <nav>
             <ul class="footer-t-list">
@@ -167,7 +361,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="navigation">
         <h2 class="categories-header">navigation</h2>
         <nav>
           <ul class="footer-t-list">
@@ -181,32 +375,39 @@
         </nav>
       </div>
 
-      <div>
+      <div class="footer-top-form">
         <form>
-          <label for="foot-country">country: </label>
-          <select name="foot-country" id="foot-country">
-            <option value="Algeria">Algeria</option>
-            <option value="Tunisia">Tunisia</option>
-            <option value="Morocco">Morocco</option>
-            <option value="Egypt">Egypt</option>
-          </select>
+          <div class="form-quest">
+            <label for="foot-country">country </label>
+            <select name="foot-country" id="foot-country">
+              <option value="Algeria">Algeria</option>
+              <option value="Tunisia">Tunisia</option>
+              <option value="Morocco">Morocco</option>
+              <option value="Egypt">Egypt</option>
+            </select>
+          </div>
 
-          <label for="foot-language">language: </label>
-          <select name="foot-language" id="foot-language">
-            <option value="Arabic">Arabic</option>
-            <option value="French">French</option>
-            <option value="English">English</option>
-            <option value="Spanish">Spanish</option>
-          </select>
+          <div class="form-quest">
+            <label for="foot-language">language </label>
+              <select name="foot-language" id="foot-language">
+                <option value="Arabic">Arabic</option>
+                <option value="French">French</option>
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+              </select>
+          </div>
 
-          <label for="foot-currency">currency: </label>
-          <select name="foot-currency" id="foot-currency">
-            <option value="Alg-Dinar">Algerian Dinar</option>
-            <option value="Tun-Dinar">Tunian Dinar</option>
-            <option value="Dirham">Dirham</option>
-            <option value="Pound">Pound</option>
-            <option value="Dollar">Dollars</option>
-          </select>
+          <div class="form-quest">
+            <label for="foot-currency">currency </label>
+            <select name="foot-currency" id="foot-currency">
+              <option value="Alg-Dinar">Algerian Dinar</option>
+              <option value="Tun-Dinar">Tunian Dinar</option>
+              <option value="Dirham">Dirham</option>
+              <option value="Pound">Pound</option>
+              <option value="Dollar">Dollars</option>
+            </select>
+          </div>
+
         </form>
       </div>
     </div>

@@ -10,10 +10,22 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: Helvetica, Gotham;
   margin: 0;
   background-color: #f0f0f0;
+}
+
+.flex {
+  display: flex;
 }
 
 /* ================================ mobile first =========================== */
@@ -21,33 +33,102 @@ body {
 /* ================================ header ================================= */
 
 header {
+  width: 100%;
   background-color: var(--color1);
 }
 
-.header-black {
+header {
   color: white;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.slogan {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.header-select {
+  height: 3rem;
+}
+
+.header-search {
+  height: 3rem;
+  border-radius: 0;
+  border: none;
+  background-color: var(--color3);
+  color: var(--color2);
+}
+
+/*  ------------------ black header ---------------------------*/
+
+.header-black {
+  color: var(--color2);
   background-color: var(--color3);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 1;
+  font-size: 1.3rem;
+  padding: 0 2%;
 }
 
-.header-black-left ul{
+.header-black-left {
+  width: 100%;
+}
+
+.h-black-left-list{
   display: flex;
   list-style: none;
+  align-items: center;
+  padding-left: 0;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.header-black-home a{
+  color: var(--color1);
 }
 
 .h-black-left-list li {
   margin-right: 10px;
 }
 
+.post {
+  display: none;
+  text-transform: uppercase;
+  background-color: var(--color1);
+  padding: 1rem;
+  border-radius: 2px;
+  color: white;
+}
+
 .header-black-right {
   display: none;
   align-items: center;
   justify-content: space-between;
-  padding-right: 50px;
+  padding-right: 0;
 }
 
 .profil-name {
@@ -59,7 +140,10 @@ header {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
 
+.header-form {
+  font-size: 2rem;
 }
 
 /* ========================================= Main ============================================ */
@@ -71,8 +155,39 @@ footer {
   border-top: 1px solid var(--color2);
 }
 
+/* ------------ Footer top ----------------- */
+
 .footer-top {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 3rem;
+}
+
+.site-desc {
+  width: 33rem;
+  font-size: 1.5rem ;
+  color: var(--color2);
+}
+
+.site-desc-logo {
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+}
+
+.site-desc-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+
+.categories {
+  width: 25rem;
 }
 
 .categories-header {
@@ -85,22 +200,90 @@ footer {
   display: flex;
 }
 
+.categories-desc nav {
+  width: 50%;
+}
+
+.navigation {
+  width: 20rem;
+  margin: 0 2rem;
+}
+
 .footer-t-list {
   list-style: none;
   color: var(--color2);
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
 }
+
+.footer-top-form {
+  width: 30rem;
+  padding-top: 4.7rem;
+}
+
+.form-quest {
+  display: flex;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.form-quest label {
+  width: 30%;
+  text-align: end;
+  padding-right: 0.2rem;
+  color: var(--color1);
+  font-weight: bold;
+}
+
+.form-quest select {
+  width: 70%;
+}
+
+/* ------------ Footer bottom ----------------- */
 
 .copyright {
   border-top: 1px solid var(--color2);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  color: var(--color2);
 }
 
 /* ========================================= first breakpoint ================================ */
 
 @media screen and (min-width: 768px) {
+  /* ------------ Header ---------------- */
+  
+  .header-black {
+    justify-content: space-between;
+  }
+
+  .h-black-left-list {
+    justify-content: flex-start;
+  }
+
+  .post {
+    display: block;
+  }
+  
   .header-black-right {
     display: flex;
+  }
+  
+  /* ------------ Footer ----------------------- */
+  
+  .footer-top {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .copyright {
+    flex-direction: row;
   }
 }
