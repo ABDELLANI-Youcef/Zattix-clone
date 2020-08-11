@@ -64,7 +64,9 @@ aside {
   margin-top: 0;
 }
 
-.result-description-p, .result-location, .result-date  {
+.result-description-p,
+ .result-location,
+  .result-date {
   color: var(--color2);
   font-size: 1.7rem;
 }
@@ -119,7 +121,7 @@ aside {
   padding: 0.5rem;
 }
 
-/* =============================== Breakpoint ========================================*/
+/* =============================== Breakpoint ======================================== */
 
 @media screen and (min-width: 768px) {
   
@@ -135,4 +137,3 @@ aside {
     flex-direction: row;
   }
 }
-

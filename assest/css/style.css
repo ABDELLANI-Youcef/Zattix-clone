@@ -1,6 +1,6 @@
 :root {
   --color1: #d35266;
-  --color2: #888888;
+  --color2: #888;
   --color3: #383838;
 }
 
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: Helvetica, Gotham;
+  font-family: Helvetica;
   margin: 0;
   background-color: #f0f0f0;
 }
@@ -35,9 +35,6 @@ body {
 header {
   width: 100%;
   background-color: var(--color1);
-}
-
-header {
   color: white;
   text-align: center;
   padding-top: 70px;
@@ -66,7 +63,7 @@ h1 {
   color: var(--color2);
 }
 
-/*  ------------------ black header ---------------------------*/
+/*  ------------------ black header --------------------------- */
 
 .header-black {
   color: var(--color2);
@@ -85,7 +82,7 @@ h1 {
   width: 100%;
 }
 
-.h-black-left-list{
+.h-black-left-list {
   display: flex;
   list-style: none;
   align-items: center;
@@ -107,7 +104,7 @@ h1 {
   color: white;
 }
 
-.header-black-home a{
+.header-black-home a {
   color: var(--color1);
 }
 
@@ -168,14 +165,13 @@ footer {
 
 .site-desc {
   width: 33rem;
-  font-size: 1.5rem ;
+  font-size: 1.5rem;
   color: var(--color2);
 }
 
 .site-desc-logo {
   display: flex;
   justify-content: center;
-  
   align-items: center;
 }
 
@@ -184,7 +180,6 @@ footer {
   height: 40px;
   margin-right: 1rem;
 }
-
 
 .categories {
   width: 25rem;
