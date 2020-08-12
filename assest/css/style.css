@@ -24,7 +24,8 @@ body {
   background-color: #f0f0f0;
 }
 
-.flex {
+.flex,
+.categories-desc {
   display: flex;
 }
 
@@ -196,10 +197,6 @@ footer {
   text-transform: uppercase;
   color: var(--color1);
   border-bottom: 2px solid var(--color1);
-}
-
-.categories-desc {
-  display: flex;
 }
 
 .categories-desc nav {

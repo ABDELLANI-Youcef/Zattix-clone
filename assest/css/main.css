@@ -105,7 +105,7 @@
 
 .products-show {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   border-top: 1px solid var(--color2);
   padding: 20px;
@@ -134,12 +134,12 @@
   font-weight: bold;
 }
 
-.proudct-state {
+.product-state {
   font-weight: bold;
   color: var(--color1);
 }
 
-.proudct-location span {
+.product-location span {
   color: var(--color2);
 }
 

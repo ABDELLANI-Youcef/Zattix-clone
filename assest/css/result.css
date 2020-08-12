@@ -13,7 +13,7 @@ aside {
   justify-content: center;
   left: 0;
   padding: 30px;
-  width: 400px;
+  font-size: 1.4rem;
 }
 
 .number-room {
@@ -33,6 +33,7 @@ aside {
 .result-offer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 1.5rem;
   border-top: 1px solid var(--color2);
   border-bottom: 1px solid var(--color2);
@@ -130,6 +131,7 @@ aside {
 
   aside {
     border-right: 1px solid var(--color2);
+    width: 400px;
   }
 
   .result-offer {
