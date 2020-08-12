@@ -32,14 +32,12 @@
   color: var(--color2);
 }
 
-.hot-ads-imgcontainer {
-  margin-right: 1rem;
-  width: 100%;
-}
-
 .hot-ads-image {
+  margin-right: 1rem;
   height: auto;
   width: 100%;
+  min-width: 300px;
+  max-width: 500px;
 }
 
 .hot-ads-desc-subject {

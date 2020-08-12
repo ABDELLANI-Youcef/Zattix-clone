@@ -34,6 +34,7 @@ body {
 /* ================================ header ================================= */
 
 header {
+  display: none;
   width: 100%;
   background-color: var(--color1);
   color: white;
@@ -258,6 +259,10 @@ footer {
 
 @media screen and (min-width: 768px) {
   /* ------------ Header ---------------- */
+
+  header {
+    display: block;
+  }
 
   .header-black {
     justify-content: space-between;
