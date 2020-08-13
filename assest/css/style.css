@@ -236,16 +236,16 @@ footer {
     font-size: 5rem;
     margin: 0;
   }
-  
+
   .slogan {
     margin-top: 0;
     font-size: 2rem;
   }
-  
+
   .header-select {
     height: 3rem;
   }
-  
+
   .header-search {
     display: inline;
     padding: 0.5rem 1rem;
@@ -255,12 +255,12 @@ footer {
     background-color: var(--color3);
     color: var(--color2);
   }
-  
+
   .header-search a {
     text-decoration: none;
     color: var(--color2);
   }
-  
+
   .header-black {
     justify-content: space-between;
   }
