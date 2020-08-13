@@ -1,88 +1,5 @@
 .hot-ads {
-  background-color: white;
   display: none;
-  align-items: center;
-  justify-content: center;
-  top: 203px;
-}
-
-.hot-ads-content {
-  display: flex;
-}
-
-.prev-hot-ads {
-  color: var(--color1);
-  font-size: 3rem;
-  border: 1px solid var(--color3);
-  width: 30px;
-  height: auto;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hot-ads-main {
-  margin: 1rem;
-  max-width: 80%;
-}
-
-.hot-ads-title {
-  text-transform: uppercase;
-  color: var(--color2);
-}
-
-.hot-ads-image {
-  margin-right: 1rem;
-  height: auto;
-  width: 100%;
-  min-width: 300px;
-  max-width: 500px;
-}
-
-.hot-ads-desc-subject {
-  color: var(--color1);
-  font-size: 2rem;
-  margin: 0;
-}
-
-.hot-ads-description {
-  font-size: 1.5rem;
-}
-
-.hot-ads-by {
-  margin-bottom: 0;
-}
-
-.hot-ads-loc {
-  margin-top: 0;
-}
-
-.thick {
-  font-weight: bold;
-}
-
-.hot-ads-options {
-  display: flex;
-  border: none;
-  color: white;
-  font-weight: bold;
-  padding: 0;
-}
-
-.hot-ads-price {
-  background-color: var(--color1);
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  padding: 1rem 2.5rem;
-  border-right: 1px solid var(--color2);
-}
-
-.hot-ads-purchase {
-  background-color: var(--color1);
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  padding: 1rem 2.5rem;
 }
 
 .product-type-title {
@@ -163,5 +80,88 @@
 @media screen and (min-width: 768px) {
   .hot-ads {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 203px;
+    background-color: white;
+  }
+
+  .hot-ads-content {
+    display: flex;
+  }
+
+  .prev-hot-ads {
+    color: var(--color1);
+    font-size: 3rem;
+    border: 1px solid var(--color3);
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hot-ads-main {
+    margin: 1rem;
+    max-width: 80%;
+  }
+
+  .hot-ads-title {
+    text-transform: uppercase;
+    color: var(--color2);
+  }
+
+  .hot-ads-image {
+    margin-right: 1rem;
+    height: auto;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+  }
+
+  .hot-ads-desc-subject {
+    color: var(--color1);
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .hot-ads-description {
+    font-size: 1.5rem;
+  }
+
+  .hot-ads-by {
+    margin-bottom: 0;
+  }
+
+  .hot-ads-loc {
+    margin-top: 0;
+  }
+
+  .thick {
+    font-weight: bold;
+  }
+
+  .hot-ads-options {
+    display: flex;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .hot-ads-price {
+    background-color: var(--color1);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 1rem 2.5rem;
+    border-right: 1px solid var(--color2);
+  }
+
+  .hot-ads-purchase {
+    background-color: var(--color1);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 1rem 2.5rem;
   }
 }
