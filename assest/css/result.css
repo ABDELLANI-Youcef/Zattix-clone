@@ -1,15 +1,12 @@
 header {
-  color: white;
   padding-top: 10px;
 }
 
 .body-content {
-  display: flex;
   flex-direction: column;
 }
 
 aside {
-  display: flex;
   justify-content: center;
   left: 0;
   padding: 30px;
@@ -31,7 +28,6 @@ aside {
 }
 
 .result-offer {
-  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
@@ -78,13 +74,11 @@ aside {
 }
 
 .result-options {
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .result-price {
-  color: white;
   font-size: 1.7rem;
   background-color: var(--color1);
   padding: 1rem 2rem;
@@ -97,7 +91,6 @@ aside {
 }
 
 .page-select {
-  display: flex;
   justify-content: center;
   font-size: 1.5rem;
   margin-bottom: 2rem;

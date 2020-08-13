@@ -19,7 +19,6 @@
 }
 
 .products-show {
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   border-top: 1px solid var(--color2);
@@ -59,7 +58,6 @@
 }
 
 .product-options {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -86,10 +84,6 @@
     background-color: white;
   }
 
-  .hot-ads-content {
-    display: flex;
-  }
-
   .prev-hot-ads {
     color: var(--color1);
     font-size: 3rem;
@@ -97,7 +91,6 @@
     width: 30px;
     height: auto;
     border-radius: 50%;
-    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -143,9 +136,7 @@
   }
 
   .hot-ads-options {
-    display: flex;
     border: none;
-    color: white;
     font-weight: bold;
     padding: 0;
   }
