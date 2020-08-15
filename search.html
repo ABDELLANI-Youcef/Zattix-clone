@@ -7,26 +7,49 @@
   <link rel="stylesheet" href="./assest/css/result.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assest/css/style/font.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <title>ZATTIX search results</title>
 </head>
 <body>
-  <div class="header-black flex">
-    <nav class="header-black-left">
-      <ul class="h-black-left-list flex">
-        <li class="nav-brand flex text-white"><img class="header-logo" src="./assest/img/pink-logo.png" alt="zattix logo"> ZATTIX</li>
-        <li class="header-black-home"><a href="index.html"> <i class="fa fa-home"></i> HOME</a></li>
-        <li><i class="far fa-border-outer"></i> COLLECTIONS</li>
-        <li><i class="fa fa-shopping-cart"></i> PURCHASE LIST</li>
-        <li class="post text-white">post an ad</li>
-      </ul>
-    </nav>
-    <div class="header-black-right">
+  <!-- start of stickt header -->
+  
+  <!-- ==================================== -->
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top header-black justify-content-between">
+
+    
+    <ul class="navbar-nav h-black-left-list flex-column flex-sm-row align-items-start align-items-sm-center" id="profile">
+      <li class="nav-item"><a href="index.html" class="navbar-brand"><img class="header-logo" src="./assest/img/pink-logo.png" alt="zattix logo"> ZATTIX</a></li>
+
+      <li class="nav-item header-black-home">
+        <a href="index.html" class="nav-link">
+          <i class="fa fa-home"></i> HOME
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="search.html" class="nav-link">
+          <i class="far fa-border-outer"></i> COLLECTIONS
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="search.html" class="nav-link">
+          <i class="fa fa-shopping-cart"></i> PURCHASE LIST
+        </a>
+      </li>
+      <li class="nav-item li-post">
+        <a href="search.html" class="nav-link post text-white">
+          post an ad
+        </a>
+      </li>
+      <li> <button class="navbar-toggler" data-toggle="collapse" data-target=".hamza"><span class="navbar-toggler-icon"></span></button></li>
+    </ul>
+    
+    <div class="header-black-right text-white navbar-collapse collapse hamza" >
       <i class="fa fa-envelope-o"></i>
-      <!-- profile picture -->
       <p class="profil-name">youcef ABDELLANI</p>
       <img class="profil-img" src="./assest/img/profil.jpg" alt="profil image">
     </div>
-  </div>
+  </nav>
 
   <header class="text-white">
     <h1>ZATTIX</h1>
@@ -288,6 +311,9 @@
         <i class="fa fa-google-plus"></i>
       </div>
     </div>
-  </footer> 
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -22,6 +22,7 @@ body {
   font-family: Helvetica, sans-serif;
   margin: 0;
   background-color: #f0f0f0;
+  overflow-x: hidden;
 }
 
 .flex {
@@ -63,8 +64,9 @@ header {
   align-items: center;
   padding-left: 0;
   justify-content: space-between;
+  width: 100%;
 }
-
+/* navbar-nav */
 .header-logo {
   width: 40px;
   height: 40px;
@@ -78,23 +80,28 @@ header {
 }
 
 .header-black-home a {
-  color: var(--color1);
+  color: var(--color1) !important;
 }
 
 .h-black-left-list li {
   margin-right: 10px;
 }
 
-.post {
+.li-post {
   display: none;
+}
+
+.post {
+  display: none !important;
 }
 
 .header-black-right {
-  display: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .profil-name {
-  margin: 0 20px;
+  margin: 0 10px;
   font-weight: 700;
 }
 
@@ -124,7 +131,7 @@ footer {
 }
 
 .site-desc {
-  width: 33rem;
+  width: 100%;
   font-size: 1.5rem;
   color: var(--color2);
 }
@@ -141,7 +148,7 @@ footer {
 }
 
 .categories {
-  width: 25rem;
+  width: 100%;
 }
 
 .categories-header {
@@ -155,8 +162,8 @@ footer {
 }
 
 .navigation {
-  width: 20rem;
-  margin: 0 2rem;
+  width: 100%;
+  margin: 0;
 }
 
 .footer-t-list {
@@ -170,7 +177,7 @@ footer {
 }
 
 .footer-top-form {
-  width: 30rem;
+  width: 100%;
   padding-top: 4.7rem;
 }
 
@@ -180,7 +187,7 @@ footer {
 }
 
 .form-quest label {
-  width: 30%;
+  width: 85px;
   text-align: end;
   padding-right: 0.2rem;
   color: var(--color1);
@@ -188,7 +195,7 @@ footer {
 }
 
 .form-quest select {
-  width: 70%;
+  width: calc(100% - 85px);
 }
 
 /* ------------ Footer bottom ----------------- */
@@ -252,10 +259,16 @@ footer {
 
   .h-black-left-list {
     justify-content: flex-start;
+    width: auto;
+  }
+
+  .li-post {
+    display: block;
+    margin-right: 0;
   }
 
   .post {
-    display: block;
+    display: block !important;
     text-transform: uppercase;
     background-color: var(--color1);
     padding: 1rem;
@@ -263,7 +276,9 @@ footer {
   }
 
   .header-black-right {
-    display: flex;
+    width: 198px;
+    flex-grow: 0 !important;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-right: 0;
@@ -282,6 +297,31 @@ footer {
   .footer-top {
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .site-desc {
+    width: 33rem;
+  }
+
+  .categories {
+    width: 25rem;
+  }
+
+  .navigation {
+    width: 20rem;
+    margin: 0 2rem;
+  }
+
+  .footer-top-form {
+    width: 30rem;
+  }
+
+  .form-quest label {
+    width: 30%;
+  }
+
+  .form-quest select {
+    width: 70%;
   }
 
   .copyright {
