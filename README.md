@@ -9,12 +9,12 @@ main page screenshot
 Search result page screenshot
 
 
-The project was the capstone on the microverse HTML/CSS curriculum created using CSS positioning, FLEX for some elements.
+The project was the capstone on the microverse HTML/CSS curriculum created using CSS positioning, FLEX for some elements and Bootstrap.
 
 ## Built With
 
 - HTML, CSS.
-- No frameworks,
+- Bootstrapgit,
 - Flex
 - Box model
 

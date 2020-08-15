@@ -37,8 +37,62 @@ body {
 
 /* ================================ header ================================= */
 
-header {
+/* header {
   display: none;
+} */
+
+.colpse-header {
+  font-size: 2rem;
+  color: var(--color3);
+  z-index: 1;
+  position: absolute;
+  right: 1rem;
+}
+
+header {
+  display: block;
+  width: 100%;
+  background-color: var(--color1);
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.slogan {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.header-select {
+  height: 3rem;
+}
+
+.header-search {
+  display: inline;
+  padding: 0.36rem 1rem;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+  background-color: var(--color3);
+  color: var(--color2);
+}
+
+.header-search a,
+a .header-search:hover {
+  color: var(--color2);
+}
+
+.header-form {
+  font-size: 2rem;
+}
+
+.header-form input {
+  height: 3rem;
 }
 
 /*  ------------------ black header --------------------------- */
@@ -215,7 +269,7 @@ footer {
 @media screen and (min-width: 768px) {
   /* ------------ Header ---------------- */
 
-  header {
+  /* header {
     display: block;
     width: 100%;
     background-color: var(--color1);
@@ -240,7 +294,7 @@ footer {
 
   .header-search {
     display: inline;
-    padding: 0.5rem 1rem;
+    padding: 0.36rem 1rem;
     border-radius: 0;
     border: none;
     text-align: center;
@@ -248,10 +302,10 @@ footer {
     color: var(--color2);
   }
 
-  .header-search a {
-    text-decoration: none;
+  .header-search a,
+  a .header-search:hover {
     color: var(--color2);
-  }
+  } */
 
   .header-black {
     justify-content: space-between;
@@ -282,14 +336,6 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding-right: 0;
-  }
-
-  .header-form {
-    font-size: 2rem;
-  }
-
-  .header-form input {
-    height: 3rem;
   }
 
   /* ------------ Footer ----------------------- */

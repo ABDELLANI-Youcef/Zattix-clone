@@ -10,10 +10,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <title>ZATTIX search results</title>
 </head>
-<body>
+<body class="bg-light">
   <!-- start of stickt header -->
-  
-  <!-- ==================================== -->
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top header-black justify-content-between">
 
@@ -51,21 +49,21 @@
     </div>
   </nav>
 
-  <header class="text-white">
+  <header class="text-white" id="header"  >
     <h1>ZATTIX</h1>
     <p class="slogan">Buying and Selling Couldn't be Simpler than this</p>
-    <form class="header-form">
+    <form class="header-form flex justify-content-center flex-wrap flex-column flex-md-row mx-5">
       
-      <select class="header-select" id="cars" name="Departement">
+      <select class="header-select mr-1 mb-1" id="cars" name="Departement">
         <option value="All-Departements">All Departements</option>
         <option value="Algiers">Algiers</option>
         <option value="Djelfa">Djelfa</option>
         <option value="Blida">Blida</option>
       </select>
-      <input type="search" name="search-subject" id="search-subject" placeholder="What do you search for ?">
-      <input type="search" name="search-subject" id="search-subject2">
-      <a href="./search.html">
-        <div class="header-search">
+      <input class="border-0 mr-md-1 mb-1 " type="search" name="search-subject" id="search-subject" placeholder="What do you search for ?">
+      <input class="border-0 mr-md-1 mb-1 " type="search" name="search-subject" id="search-subject2">
+      <a class="text-decoration-none" href="./search.html">
+        <div class="header-search text-decoration-none">
           Search
         </div>
       </a>
