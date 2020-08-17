@@ -13,40 +13,46 @@
 <body class="bg-light">
   <!-- start of stickt header -->
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top header-black justify-content-between">
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top header-black "><!--justify-content-between -->
 
     
-    <ul class="navbar-nav h-black-left-list flex-column flex-sm-row align-items-start align-items-sm-center" id="profile">
-      <li class="nav-item"><a href="index.html" class="navbar-brand"><img class="header-logo" src="./assest/img/pink-logo.png" alt="zattix logo"> ZATTIX</a></li>
 
-      <li class="nav-item header-black-home">
+    <a href="index.html" class="navbar-brand">
+      <img class="header-logo" src="./assest/img/pink-logo.png" alt="zattix logo"> 
+      <span class="navbar-text text-white font-weight-bold"> ZATTIX</span>
+    </a>
+    <ul class="navbar-nav h-black-left-list flex-column flex-md-row align-items-center" id="profile">
+      
+
+      <li class="nav-item header-black-home navbar-collapse collapse hamza">
         <a href="index.html" class="nav-link">
           <i class="fa fa-home"></i> HOME
         </a>
       </li>
-      <li class="nav-item">
-        <a href="search.html" class="nav-link">
+      <li class="nav-item navbar-collapse collapse hamza">
+        <a href="search.html" class="nav-link text-muted">
           <i class="far fa-border-outer"></i> COLLECTIONS
         </a>
       </li>
-      <li class="nav-item">
-        <a href="search.html" class="nav-link">
+      <li class="nav-item navbar-collapse collapse hamza">
+        <a href="search.html" class="nav-link text-secondary">
           <i class="fa fa-shopping-cart"></i> PURCHASE LIST
         </a>
       </li>
-      <li class="nav-item li-post">
-        <a href="search.html" class="nav-link post text-white">
+      <li class="nav-item li-post navbar-collapse collapse hamza">
+        <a href="search.html" class="nav-link post text-white p-2">
           post an ad
         </a>
       </li>
-      <li><button class="navbar-toggler" data-toggle="collapse" data-target=".hamza"><span class="navbar-toggler-icon"></span></button></li>
+      <!-- <li></li> -->
     </ul>
-    
+
     <div class="header-black-right text-white navbar-collapse collapse hamza" >
       <i class="fa fa-envelope-o"></i>
       <p class="profil-name">youcef ABDELLANI</p>
       <img class="profil-img" src="./assest/img/profil.jpg" alt="profil image">
     </div>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".hamza"><span class="navbar-toggler-icon"></span></button>
   </nav>
 
   <!-- end of sticky header-->

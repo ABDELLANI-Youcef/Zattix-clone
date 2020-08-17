@@ -148,6 +148,7 @@
 
 @media screen and (min-width: 768px) {
   .prev-hot-ads {
+    display: flex;
     color: var(--color1);
     font-size: 3rem;
     border: 1px solid var(--color3);
