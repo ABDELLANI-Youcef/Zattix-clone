@@ -1,0 +1,173 @@
+.hot-ads {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 203px;
+  background-color: white;
+}
+
+.prev-hot-ads {
+  display: none;
+}
+
+.hot-ads-main {
+  margin: 1rem;
+  max-width: 80%;
+}
+
+.hot-ads-title {
+  text-transform: uppercase;
+  color: var(--color2);
+}
+
+.hot-ads-content {
+  flex-direction: column;
+}
+
+.hot-ads-image {
+  margin-right: 1rem;
+  height: auto;
+  width: 100%;
+}
+
+.hot-ads-desc-subject {
+  color: var(--color1);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.hot-ads-description {
+  font-size: 1.5rem;
+}
+
+.hot-ads-by {
+  margin-bottom: 0;
+}
+
+.hot-ads-loc {
+  margin-top: 0;
+}
+
+.thick {
+  font-weight: bold;
+}
+
+.hot-ads-options {
+  border: none;
+  font-weight: bold;
+  padding: 0;
+}
+
+.hot-ads-price {
+  background-color: var(--color1);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 1rem 2.5rem;
+  border-right: 1px solid var(--color2);
+}
+
+.hot-ads-purchase {
+  background-color: var(--color1);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 1rem 2.5rem;
+}
+
+.product-type-title {
+  color: var(--color3);
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+
+.product-type-icon {
+  font-size: 2.3rem;
+  margin-right: 2rem;
+}
+
+.product-type-explain {
+  color: var(--color2);
+  font-size: 1.4rem;
+}
+
+.products-show {
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--color2);
+  padding: 20px;
+}
+
+.product-offer {
+  min-width: 250px;
+  max-width: 320px;
+  background-color: white;
+  border: 1px solid var(--color2);
+  margin: 10px;
+}
+
+.product-picture {
+  width: 100%;
+  height: 300px;
+}
+
+.product-description {
+  padding: 10px;
+  font-size: 1.4rem;
+}
+
+.product-name {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.product-state {
+  font-weight: bold;
+  color: var(--color1);
+}
+
+.product-location span {
+  color: var(--color2);
+}
+
+.product-options {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-add {
+  color: var(--color2);
+  border: 1px solid var(--color2);
+  padding: 3px;
+}
+
+.product-prise {
+  color: var(--color1);
+  font-weight: bold;
+}
+
+/* =============================== breakpoint ================================= */
+
+@media screen and (min-width: 768px) {
+  .prev-hot-ads {
+    display: flex;
+    color: var(--color1);
+    font-size: 3rem;
+    border: 1px solid var(--color3);
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hot-ads-content {
+    flex-direction: row;
+  }
+
+  .hot-ads-image {
+    margin-right: 1rem;
+    height: auto;
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,351 @@
+:root {
+  --color1: #d35266;
+  --color2: #888;
+  --color3: #383838;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.text-white {
+  color: white;
+}
+
+/* ================================ mobile first =========================== */
+
+/* ================================ header ================================= */
+
+/* header {
+  display: none;
+} */
+
+.colpse-header {
+  font-size: 2rem;
+  color: var(--color3);
+  z-index: 1;
+  position: absolute;
+  right: 1rem;
+}
+
+header {
+  display: block;
+  width: 100%;
+  background-color: var(--color1);
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.slogan {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.header-select {
+  height: 3rem;
+}
+
+.header-search {
+  display: inline;
+  padding: 0.36rem 1rem;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+  background-color: var(--color3);
+  color: var(--color2);
+}
+
+.header-search a,
+a .header-search:hover {
+  color: var(--color2);
+}
+
+.header-form {
+  font-size: 2rem;
+}
+
+.header-form input {
+  height: 3rem;
+}
+
+/*  ------------------ black header --------------------------- */
+
+.header-black {
+  color: var(--color2);
+  background-color: var(--color3);
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-size: 1.3rem;
+  padding: 0 2%;
+}
+
+.header-black-left {
+  width: 100%;
+}
+
+.h-black-left-list {
+  list-style: none;
+  align-items: center;
+  padding-left: 0;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* navbar-nav */
+.header-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-brand {
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header-black-home a {
+  color: var(--color1) !important;
+}
+
+.h-black-left-list li {
+  margin-right: 10px;
+}
+
+.post {
+  text-transform: uppercase;
+  background-color: var(--color1);
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+.header-black-right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.profil-name {
+  margin: 0 10px;
+  font-weight: 700;
+}
+
+.profil-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.navbar-toggler {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+}
+
+/* ========================================= collapse ============================================ */
+
+.hamza {
+  padding: 10px 0;
+}
+
+/* ========================================= Footer ========================================== */
+
+footer {
+  background-color: white;
+  border-top: 1px solid var(--color2);
+}
+
+/* ------------ Footer top ----------------- */
+
+.footer-top {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 3rem;
+}
+
+.site-desc {
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--color2);
+}
+
+.site-desc-logo {
+  justify-content: center;
+  align-items: center;
+}
+
+.site-desc-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.categories {
+  width: 100%;
+}
+
+.categories-header {
+  text-transform: uppercase;
+  color: var(--color1);
+  border-bottom: 2px solid var(--color1);
+}
+
+.categories-desc nav {
+  width: 50%;
+}
+
+.navigation {
+  width: 100%;
+  margin: 0;
+}
+
+.footer-t-list {
+  list-style: none;
+  color: var(--color2);
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.footer-top-form {
+  width: 100%;
+  padding-top: 4.7rem;
+}
+
+.form-quest {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.form-quest label {
+  width: 85px;
+  text-align: end;
+  padding-right: 0.2rem;
+  color: var(--color1);
+  font-weight: bold;
+}
+
+.form-quest select {
+  width: calc(100% - 85px);
+}
+
+/* ------------ Footer bottom ----------------- */
+
+.copyright {
+  border-top: 1px solid var(--color2);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  color: var(--color2);
+}
+
+/* ========================================= first breakpoint ================================ */
+
+@media screen and (min-width: 768px) {
+  /* ------------ Header ---------------- */
+
+  .header-black {
+    justify-content: space-between;
+  }
+
+  .h-black-left-list {
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  .li-post {
+    display: block;
+    margin-right: 0;
+  }
+
+  .post {
+    display: block !important;
+    text-transform: uppercase;
+    background-color: var(--color1);
+    padding: 1rem;
+    border-radius: 2px;
+  }
+
+  .header-black-right {
+    position: absolute;
+    right: 15px;
+    width: 198px;
+    flex-grow: 0 !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+  }
+
+  /* ------------ Footer ----------------------- */
+
+  .footer-top {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .site-desc {
+    width: 33rem;
+  }
+
+  .categories {
+    width: 25rem;
+  }
+
+  .navigation {
+    width: 20rem;
+    margin: 0 2rem;
+  }
+
+  .footer-top-form {
+    width: 30rem;
+  }
+
+  .form-quest label {
+    width: 30%;
+  }
+
+  .form-quest select {
+    width: 70%;
+  }
+
+  .copyright {
+    flex-direction: row;
+  }
+}

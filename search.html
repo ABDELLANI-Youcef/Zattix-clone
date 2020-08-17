@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assest/css/style.css">
+  <link rel="stylesheet" href="./assest/css/result.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assest/css/style/font.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>ZATTIX search results</title>
+</head>
+<body class="bg-light">
+  <!-- start of stickt header -->
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top header-black "><!--justify-content-between -->
+
+    <a href="index.html" class="navbar-brand">
+      <img class="header-logo" src="./assest/img/pink-logo.png" alt="zattix logo"> 
+      <span class="navbar-text text-white font-weight-bold"> ZATTIX</span>
+    </a>
+    <ul class="navbar-nav h-black-left-list flex-column flex-md-row align-items-center" id="profile">
+      
+
+      <li class="nav-item header-black-home navbar-collapse collapse hamza">
+        <a href="index.html" class="nav-link">
+          <i class="fa fa-home"></i> HOME
+        </a>
+      </li>
+      <li class="nav-item navbar-collapse collapse hamza">
+        <a href="search.html" class="nav-link text-secondary">
+          <i class="far fa-border-outer"></i> COLLECTIONS
+        </a>
+      </li>
+      <li class="nav-item navbar-collapse collapse hamza">
+        <a href="search.html" class="nav-link text-secondary">
+          <i class="fa fa-shopping-cart"></i> PURCHASE LIST
+        </a>
+      </li>
+      <li class="nav-item li-post navbar-collapse collapse hamza">
+        <a href="search.html" class="nav-link post text-white p-2">
+          post an ad
+        </a>
+      </li>
+    </ul>
+
+    <div class="header-black-right text-white navbar-collapse collapse hamza" >
+      <i class="fa fa-envelope-o"></i>
+      <p class="profil-name">youcef ABDELLANI</p>
+      <img class="profil-img" src="./assest/img/profil.jpg" alt="profil image">
+    </div>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".hamza"><span class="navbar-toggler-icon"></span></button>
+  </nav>
+
+  <header class="text-white" id="header"  >
+    <h1>ZATTIX</h1>
+    <p class="slogan">Buying and Selling Couldn't be Simpler than this</p>
+    <form class="header-form flex justify-content-center flex-wrap flex-column flex-md-row mx-5">
+      
+      <select class="header-select mr-1 mb-1" id="cars" name="Departement">
+        <option value="All-Departements">All Departements</option>
+        <option value="Algiers">Algiers</option>
+        <option value="Djelfa">Djelfa</option>
+        <option value="Blida">Blida</option>
+      </select>
+      <input class="border-0 mr-md-1 mb-1 " type="search" name="search-subject" id="search-subject" placeholder="What do you search for ?">
+      <input class="border-0 mr-md-1 mb-1 " type="search" name="search-subject" id="search-subject2">
+      <a class="text-decoration-none" href="./search.html">
+        <div class="header-search text-decoration-none">
+          Search
+        </div>
+      </a>
+    </form>
+  </header>
+
+  <div class="body-content flex">
+    <aside class="flex">
+      <form>
+        <input type="checkbox" name="rent" id="rent"> <label for="rent">Rent</label>
+        <input type="checkbox" name="ownership" id="ownership"> <label for="ownership">Ownership</label>
+        <h3 class="aside-title">Type</h3>
+        <div><input type="checkbox" name="entire" id="entire"> <label for="entire">Entire Place</label></div>
+        <div><input type="checkbox" name="private" id="private"> <label for="private">Private Place</label></div>
+        <div><input type="checkbox" name="shared" id="shared"> <label for="shared">Shared Place</label></div>
+
+        <h3 class="aside-title">Size</h3>
+        <div><input type="checkbox" name="four-room" id="four-room"> <label for="four-room">2-4 Rooms</label></div>
+        <div><input type="checkbox" name="five-room" id="five-room"> <label for="five-room">+ 5 Rooms</label></div>
+        <div><input type="checkbox" name="costum" id="costum"> <label for="costum">Custom</label> <input class="number-room" type="text" name="number-room" id="number-room" value="5"></div>
+
+        <h3 class="aside-title">Price Range</h3>
+        <div><input type="checkbox" name="ten" id="ten"> <label for="ten">10$ - 100$</label></div>
+        <div><input type="checkbox" name="hundred" id="hundred"> <label for="hundred">100$ - 500$</label></div>
+        <div><input type="checkbox" name="f-hundred" id="f-hundred"> <label for="f-hundred">500$ - 1000$</label></div>
+        <div><input type="checkbox" name="thousand" id="thousand"> <label for="thousand">+1000$</label></div>
+      </form>
+    </aside>
+    <main class="show-result">
+      <p class="results-number">138 Results for "Flat" Search at Ain Oussera in category ukyo</p>
+
+      <section class="result-offer flex">
+        <div class="result-img-container">
+          <img class="result-image"
+          src="https://images-na.ssl-images-amazon.com/images/I/71sVW4XXB+L.jpg"
+          alt="result image">
+        </div>
+        
+        <div class="result-description">
+          <h3 class="result-title" >Flat with Big Living, 3 rooms, 7 kitchens</h3>
+          <p class="result-type">500 M, Ownership</p>
+          <p class="result-description-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aut magnam laborum culpa illum sit at rem tenetur corrupti. Repellendus corrupti molestias ipsa labore vero doloribus. A
+            met, quidem culpa? youcef is the worst knight in the world</p>
+          <p class="result-location"><span>Location:</span> 11 quarter Ben Badis, Ain Oussera</p>
+          <div class="result-options flex">
+            <p class="result-date">6 Aug, 1995</p>
+            <p class="result-price text-white">150$</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="result-offer result-selected flex">
+        <div class="result-img-container">
+          <img class="result-image"
+          src="https://images-na.ssl-images-amazon.com/images/I/71LRdEUOmNL.jpg"
+          alt="result image">
+        </div>
+        
+        <div class="result-description">
+          <h3 class="result-title" >Flat with Big Living, 3 rooms, 7 kitchens</h3>
+          <p class="result-type">500 M, Ownership</p>
+          <p class="result-description-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aut magnam laborum culpa illum sit at rem tenetur corrupti. Repellendus corrupti molestias ipsa labore vero doloribus. A
+            met, quidem culpa? youcef is the worst knight in the world</p>
+          <p class="result-location"><span>Location:</span> 11 quarter Ben Badis, Ain Oussera</p>
+          <div class="result-options flex">
+            <p class="result-date">6 Aug, 1995</p>
+            <div class="flex">
+              <p class="result-price text-white give-call"> Give a Call</p>
+              <p class="result-price text-white">150$</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="result-offer flex">
+        <div class="result-img-container">
+          <img class="result-image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpYkG9Jd5EPP2zOu_jbMpkRwyw6dqK1H-04Q&usqp=CAU"
+          alt="result image">
+        </div>
+        
+        <div class="result-description">
+          <h3 class="result-title" >Flat with Big Living, 3 rooms, 7 kitchens</h3>
+          <p class="result-type">500 M, Ownership</p>
+          <p class="result-description-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aut magnam laborum culpa illum sit at rem tenetur corrupti. Repellendus corrupti molestias ipsa labore vero doloribus. A
+            met, quidem culpa? youcef is the worst knight in the world</p>
+          <p class="result-location"><span>Location:</span> 11 quarter Ben Badis, Ain Oussera</p>
+          <div class="result-options flex">
+            <p class="result-date">6 Aug, 1995</p>
+            <p class="result-price text-white">150$</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="result-offer flex">
+        <div class="result-img-container">
+          <img class="result-image"
+          src="https://images-na.ssl-images-amazon.com/images/I/81wQ+0jpQpL.jpg"
+          alt="result image">
+        </div>
+        
+        <div class="result-description">
+          <h3 class="result-title" >Flat with Big Living, 3 rooms, 7 kitchens</h3>
+          <p class="result-type">500 M, Ownership</p>
+          <p class="result-description-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aut magnam laborum culpa illum sit at rem tenetur corrupti. Repellendus corrupti molestias ipsa labore vero doloribus. A
+            met, quidem culpa? youcef is the worst knight in the world</p>
+          <p class="result-location"><span>Location:</span> 11 quarter Ben Badis, Ain Oussera</p>
+          <div class="result-options flex">
+            <p class="result-date">6 Aug, 1995</p>
+            <p class="result-price text-white">150$</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="result-offer flex">
+        <div class="result-img-container">
+          <img class="result-image"
+          src="https://images-na.ssl-images-amazon.com/images/I/91dDv9WOcFL.jpg"
+          alt="result image">
+        </div>
+        
+        <div class="result-description">
+          <h3 class="result-title" >Flat with Big Living, 3 rooms, 7 kitchens</h3>
+          <p class="result-type">500 M, Ownership</p>
+          <p class="result-description-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi aut magnam laborum culpa illum sit at rem tenetur corrupti. Repellendus corrupti molestias ipsa labore vero doloribus. A
+            met, quidem culpa? youcef is the worst knight in the world</p>
+          <p class="result-location"><span>Location:</span> 11 quarter Ben Badis, Ain Oussera</p>
+          <div class="result-options flex">
+            <p class="result-date">6 Aug, 1995</p>
+            <p class="result-price text-white">150$</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="page-select flex">
+        <div class="page-option">1</div> 
+        <div class="page-option">2</div> 
+        <div class="page-option">3</div> 
+        <div class="page-option">4</div> 
+        <div>...</div> 
+        <div class="page-option">7</div> 
+      </div>
+
+    </main>
+  </div>
+  <footer>
+    <div class="footer-top flex">
+      <div class="site-desc">
+        <div class="site-desc-logo flex">
+          <img src="./assest/img/grey-logo.png" alt="society logo">
+          <h3>ZATTIX</h3>
+        </div>
+        <p>Zattix is an online shop web site model in which we offer different type of products. Here you can make advertisements and buy different products. You can trust us in order to have ease in commercial affaires. Thanks you very much for working with us.</p>
+      </div>
+
+      <div class="categories">
+        <h2 class="categories-header">categories</h2>
+        <div class="categories-desc flex">
+          <nav>
+            <ul class="footer-t-list">
+              <li>real estate</li>
+              <li>automotive</li>
+              <li>electronics</li>
+              <li>clothing</li>
+              <li>fashion</li>
+              <li>kids</li>
+              <li>food & drink</li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="footer-t-list">
+              <li>real estate</li>
+              <li>automotive</li>
+              <li>electronics</li>
+              <li>clothing</li>
+              <li>fashion</li>
+              <li>kids</li>
+              <li>food & drink</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <h2 class="categories-header">navigation</h2>
+        <nav>
+          <ul class="footer-t-list">
+            <li>home</li>
+            <li>sign in</li>
+            <li>sign up</li>
+            <li>terms & conditions</li>
+            <li>FAQ</li>
+            <li>help</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-top-form">
+        <form>
+          <div class="form-quest flex">
+            <label for="foot-country">country </label>
+            <select name="foot-country" id="foot-country">
+              <option value="Algeria">Algeria</option>
+              <option value="Tunisia">Tunisia</option>
+              <option value="Morocco">Morocco</option>
+              <option value="Egypt">Egypt</option>
+            </select>
+          </div>
+
+          <div class="form-quest flex">
+            <label for="foot-language">language </label>
+              <select name="foot-language" id="foot-language">
+                <option value="Arabic">Arabic</option>
+                <option value="French">French</option>
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+              </select>
+          </div>
+
+          <div class="form-quest flex">
+            <label for="foot-currency">currency </label>
+            <select name="foot-currency" id="foot-currency">
+              <option value="Alg-Dinar">Algerian Dinar</option>
+              <option value="Tun-Dinar">Tunian Dinar</option>
+              <option value="Dirham">Dirham</option>
+              <option value="Pound">Pound</option>
+              <option value="Dollar">Dollars</option>
+            </select>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="copyright flex">
+      <p>Copyright <i class="fa fa-copyright"></i> 2015 Zattix.com. All Rights Reserved. Designed by Mohammed Awad.</p>
+      <div>
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-tumblr" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-in" aria-hidden="true"></i>
+        <i class="fa fa-google-plus"></i>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

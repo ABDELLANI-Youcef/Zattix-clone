@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assest/css/style.css">
+  <link rel="stylesheet" href="./assest/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assest/css/style/font.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>ZATTIX main page clone</title>
+</head>
+<body class="bg-light">
+  <!-- start of stickt header -->
+
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top header-black "><!--justify-content-between -->
+
+    
+
+    <a href="index.html" class="navbar-brand">
+      <img class="header-logo" src="./assest/img/pink-logo.png" alt="zattix logo"> 
+      <span class="navbar-text text-white font-weight-bold"> ZATTIX</span>
+    </a>
+    <ul class="navbar-nav h-black-left-list flex-column flex-md-row align-items-center" id="profile">
+      
+
+      <li class="nav-item header-black-home navbar-collapse collapse hamza">
+        <a href="index.html" class="nav-link">
+          <i class="fa fa-home"></i> HOME
+        </a>
+      </li>
+      <li class="nav-item navbar-collapse collapse hamza">
+        <a href="search.html" class="nav-link text-muted">
+          <i class="far fa-border-outer"></i> COLLECTIONS
+        </a>
+      </li>
+      <li class="nav-item navbar-collapse collapse hamza">
+        <a href="search.html" class="nav-link text-secondary">
+          <i class="fa fa-shopping-cart"></i> PURCHASE LIST
+        </a>
+      </li>
+      <li class="nav-item li-post navbar-collapse collapse hamza">
+        <a href="search.html" class="nav-link post text-white p-2">
+          post an ad
+        </a>
+      </li>
+      <!-- <li></li> -->
+    </ul>
+
+    <div class="header-black-right text-white navbar-collapse collapse hamza" >
+      <i class="fa fa-envelope-o"></i>
+      <p class="profil-name">youcef ABDELLANI</p>
+      <img class="profil-img" src="./assest/img/profil.jpg" alt="profil image">
+    </div>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".hamza"><span class="navbar-toggler-icon"></span></button>
+  </nav>
+
+  <!-- end of sticky header-->
+
+  <header class="text-white">
+    <h1>ZATTIX</h1>
+    <p class="slogan">Buying and Selling Couldn't be Simpler than this</p>
+    <form class="header-form flex justify-content-center flex-wrap flex-column flex-md-row mx-5">
+      
+      <select class="header-select mr-1 mb-1" id="cars" name="Departement">
+        <option value="All-Departements">All Departements</option>
+        <option value="Algiers">Algiers</option>
+        <option value="Djelfa">Djelfa</option>
+        <option value="Blida">Blida</option>
+      </select>
+      <input class="border-0 mr-md-1 mb-1 " type="search" name="search-subject" id="search-subject" placeholder="What do you search for ?">
+      <input class="border-0 mr-md-1 mb-1 " type="search" name="search-subject" id="search-subject2">
+      <a class="text-decoration-none" href="./search.html">
+        <div class="header-search text-decoration-none">
+          Search
+        </div>
+      </a>
+    </form>
+  </header>
+
+  <article class="hot-ads bg-white">
+    <div class="prev-hot-ads flex">
+      <i class="fa fa-angle-left"></i>
+    </div>
+    <div class="hot-ads-main">
+      <h2 class="hot-ads-title">hot ads</h2>
+      <div class="hot-ads-content flex">
+        <img class="hot-ads-image"
+          src="https://upload.wikimedia.org/wikipedia/commons/6/63/FoS20162016_0624_132444AA_%2827785299372%29.jpg" 
+          alt="bugatti chiron image">
+        <div class="hot-ads-description">
+          <h3 class="hot-ads-desc-subject">Bugatti Chiron</h3>
+          <p>
+            Bugatti chirent is a decendent of Bugatti veyron. It is an land plane, a missile that can arrive to the speed of 495km/h. if you want to try it you have to be a very fast and furious man. but don't worry it is very confortable ad safe.
+          </p>
+          <p class="hot-ads-by"><span class="thick">By:</span> youcef ABDELLANI</p>
+          <p class="hot-ads-loc"><span class="thick">Location:</span> Ain Oussera, Djelfa, Algeria</p>
+          <div class="hot-ads-options flex text-white">
+            <div class="hot-ads-price">1 440 000$</div>
+            <div class="hot-ads-purchase"><i class="fa fa-shopping-cart"></i> PURCHASE</div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="prev-hot-ads flex">
+      <i class="fa fa-angle-right"></i>
+    </div>
+    
+  </article>
+
+  <main>
+
+    <section>
+      <h3 class="product-type-title"><i class="fa fa-plane product-type-icon"></i> Flights <span class="product-type-explain">(Helicopter, private flights and big flight)</span></h3>
+      <div class="products-show  flex">
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://airbus-h.assetsadobe2.com/is/image/content/dam/channel-specific/website-/products-and-services/aircraft/header/aircraft-families/A380-family-stage.jpg?wid=1920&fit=fit,1&qlt=85,0"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">Air bus A380 Passenger aircraft: a big plane for your confortable and safe travelings</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+        
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://ams3.digitaloceanspaces.com/rewyer-storage-001/media/61d5c7b6c3457c49348c657a1011099ceaed53d8d8eda009d47838b04083f686"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">This Helicopter is a very developed flight that can ensure you safe and confortable journey.</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://www.deltaprivatejets.com/wp-content/uploads/2017/02/N680KJ-Exterior-3-compressed.jpg"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">Here is a awsome private plane that you can use in order to feel like a real king. If you can buy it don't hesitate.</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://www.elitetraveler.com/wp-content/uploads/2016/02/Cobalt_Launch_1.jpg"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">here is the future of the private and so so so so fast planes. prepare yourself for the very long voyage in very short time.</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://planefinder.net/about/wp-content/uploads/2018/04/Airbus-Beluga.jpg"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">Here is the real air boat. It is very economic choise for the very hot lines of airlines</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="product-type-title"><i class="fa fa-book"></i> Books <span class="product-type-explain">(roman, human developement and strategie)</span></h3>
+      <div class="products-show flex">
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://images-na.ssl-images-amazon.com/images/I/71sVW4XXB+L.jpg"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">Prepare your self to be a real strategic person that succes in his life with the book of robert greene</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+        
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://images-na.ssl-images-amazon.com/images/I/71LRdEUOmNL.jpg"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">A good book to learn how to master the work with creativity</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpYkG9Jd5EPP2zOu_jbMpkRwyw6dqK1H-04Q&usqp=CAU"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">You watched harry potter movies? here you can see the the stories</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://images-na.ssl-images-amazon.com/images/I/81wQ+0jpQpL.jpg"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">Develop you live with the books of antony robins</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://images-na.ssl-images-amazon.com/images/I/91dDv9WOcFL.jpg"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">Here are the best groupe of conan doelle that talk  about sherlok holmes</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="product-type-title"><i class="fa fa-bicycle product-type-icon"></i>Sport materials <span class="product-type-explain">(bycicles, fitness, soccer)</span></h3>
+      <div class="products-show flex">
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://images-na.ssl-images-amazon.com/images/I/41rfFyzCqdL.jpg"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">Prepare yourselk yo become the next boyka</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+        
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://cdn.shopify.com/s/files/1/1772/1703/t/16/assets/cowboy-3-absolute-black_w_6.png?v=15537051773153245689"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">Here is the best way to lose the extra weight</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://images-na.ssl-images-amazon.com/images/I/714OAiTVBiL._AC_SL1500_.jpg"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">let's start to train in order to join terminator movies?</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://images-na.ssl-images-amazon.com/images/I/718lZ7YJdAL._AC_UL1500_.jpg"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">this is the best way t have to same fitness of bruce lee (lee shiao long)</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+
+        <div class="product-offer">
+          <img class="product-picture"
+           src="https://cdn.shopify.com/s/files/1/0906/5342/products/NickLight_SoccerBall1.jpg?v=1497386076"
+           alt="">
+           <div class="product-description">
+            <p class="product-name">I beleive that christiano ronaldo and zlatan Ibrahimovic are the best soccer players in the history</p>
+            <p class="product-state">New</p>
+            <p class="product-location"><span>From:</span> Djelfa, Algeria</p>
+            <div class="product-options flex">
+              <i class="fa fa-plus product-add"></i>
+              <p class="product-prise">450$</p>
+            </div>
+           </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="bg-white">
+    <div class="footer-top flex">
+      <div class="site-desc">
+        <div class="site-desc-logo flex">
+          <img src="./assest/img/grey-logo.png" alt="society logo">
+          <h3>ZATTIX</h3>
+        </div>
+        <p>Zattix is an online shop web site model in which we offer different type of products. Here you can make advertisements and buy different products. you can trust us in order to have ease in commercial affaires. Thanks you very much for working with us.</p>
+      </div>
+
+      <div class="categories">
+        <h2 class="categories-header">categories</h2>
+        <div class="categories-desc flex">
+          <nav>
+            <ul class="footer-t-list">
+              <li>real estate</li>
+              <li>automotive</li>
+              <li>electronics</li>
+              <li>clothing</li>
+              <li>fashion</li>
+              <li>kids</li>
+              <li>food & drink</li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="footer-t-list">
+              <li>real estate</li>
+              <li>automotive</li>
+              <li>electronics</li>
+              <li>clothing</li>
+              <li>fashion</li>
+              <li>kids</li>
+              <li>food & drink</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <h2 class="categories-header">navigation</h2>
+        <nav>
+          <ul class="footer-t-list">
+            <li>home</li>
+            <li>sign in</li>
+            <li>sign up</li>
+            <li>terms & conditions</li>
+            <li>FAQ</li>
+            <li>help</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-top-form">
+        <form>
+          <div class="form-quest flex">
+            <label for="foot-country">country </label>
+            <select name="foot-country" id="foot-country">
+              <option value="Algeria">Algeria</option>
+              <option value="Tunisia">Tunisia</option>
+              <option value="Morocco">Morocco</option>
+              <option value="Egypt">Egypt</option>
+            </select>
+          </div>
+
+          <div class="form-quest flex">
+            <label for="foot-language">language </label>
+              <select name="foot-language" id="foot-language">
+                <option value="Arabic">Arabic</option>
+                <option value="French">French</option>
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+              </select>
+          </div>
+
+          <div class="form-quest flex">
+            <label for="foot-currency">currency </label>
+            <select name="foot-currency" id="foot-currency">
+              <option value="Alg-Dinar">Algerian Dinar</option>
+              <option value="Tun-Dinar">Tunian Dinar</option>
+              <option value="Dirham">Dirham</option>
+              <option value="Pound">Pound</option>
+              <option value="Dollar">Dollars</option>
+            </select>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="copyright flex">
+      <p>Copyright <i class="fa fa-copyright"></i> 2015 Zattix.com. All Rights Reserved. Designed by Mohammed Awad.</p>
+      <div>
+        <i class="fa fa-facebook-square"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-tumblr" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-in" aria-hidden="true"></i>
+        <i class="fa fa-google-plus"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
